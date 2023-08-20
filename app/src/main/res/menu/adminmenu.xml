@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <item android:title="Booking Details"
+        android:id="@+id/booking"
+        android:icon="@drawable/baseline_event_24"
+
+        />
+    <item android:title="Services"
+        android:id="@+id/services"
+        android:icon="@drawable/baseline_room_service_24"
+
+        />
+
+    <item android:title="Venues"
+        android:id="@+id/venues"
+        android:icon="@drawable/baseline_location_on_24"
+
+        />
+    <item android:title="Logout"
+        android:id="@+id/adminlogout"
+        android:icon="@drawable/baseline_logout_24"
+
+        />
+</menu>

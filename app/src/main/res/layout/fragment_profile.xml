@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:padding="8sp"
+        />
+
+    <TextView
+        android:id="@+id/editaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:padding="8sp"
+        />
+
+    <TextView
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="30sp"
+        android:textSize="22sp"
+        android:inputType="textEmailAddress"
+        android:padding="8sp"
+        />
+
+    <TextView
+        android:id="@+id/editphoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:padding="8sp"
+        />
+
+    <TextView
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="30sp"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        android:padding="8sp"
+        />
+
+</LinearLayout>

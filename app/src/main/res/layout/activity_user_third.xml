@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/framelayout1">
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/servicesLayout">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="420sp"
+        android:layout_height="wrap_content"
+        android:background="#9AC2E3"
+        app:title="Choose The Services"
+
+        app:titleMarginEnd="72dp"
+        app:titleMarginStart="72dp"
+        app:titleTextColor="@color/black" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:src="@drawable/service"/>
+
+<Button
+    android:id="@+id/service1Button"
+    android:layout_width="350sp"
+    android:layout_height="wrap_content"
+    android:text="Catering And Food"
+    android:background="@drawable/buttonshape"
+    android:layout_marginLeft="10sp"
+    android:layout_marginTop="5sp"
+    android:textSize="18sp"
+    android:drawableLeft="@drawable/baseline_fastfood_24"
+
+
+   />
+
+<Button
+    android:id="@+id/service2Button"
+    android:layout_width="350sp"
+    android:layout_height="wrap_content"
+    android:text="Bar"
+    android:textSize="18sp"
+    android:background="@drawable/buttonshape"
+   android:layout_marginTop="10sp"
+    android:layout_marginLeft="10sp"
+    android:drawableLeft="@drawable/baseline_local_drink_24"
+
+    />
+    <Button
+        android:id="@+id/service3Button"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:text="Decoration"
+        android:background="@drawable/buttonshape"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/baseline_local_florist_24"/>
+    <Button
+        android:id="@+id/service4Button"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:text="Swimming"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/baseline_water_24"/>
+    <Button
+        android:id="@+id/service5Button"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:text="WIFI"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="10sp"
+        android:textSize="18sp"
+        android:layout_marginLeft="10sp"
+        android:drawableLeft="@drawable/baseline_network_wifi_24"/>
+
+<!-- Add more buttons for other services -->
+    <Button
+        android:id="@+id/service6Button"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:textSize="18sp"
+
+        android:drawableLeft="@drawable/baseline_music_video_24"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="40sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="270sp"
+        android:backgroundTint="#D6D6D8"/>
+
+</LinearLayout>
+
+</FrameLayout>

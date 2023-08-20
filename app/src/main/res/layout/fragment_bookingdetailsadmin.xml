@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- event_fragment.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageevent"
+        android:layout_width="wrap_content"
+        android:layout_height="250sp"
+        android:src="@drawable/edit"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Event Image" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Title" />
+
+    <EditText
+        android:id="@+id/imageURLEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Image URL"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Event"
+        android:onClick="addEvent" />
+
+    <Button
+        android:id="@+id/viewDetailsButton"
+        android:layout_width="180sp"
+        android:layout_height="45sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/shape"
+        android:text="View Event Details" />
+
+</LinearLayout>
+
+

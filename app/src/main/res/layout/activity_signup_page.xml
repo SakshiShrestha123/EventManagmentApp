@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+    <ImageView
+        android:layout_width="270sp"
+        android:layout_height="150sp"
+        android:src="@drawable/signupimg"
+        android:layout_marginLeft="40sp"
+        android:id="@+id/signupimg" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:padding="8sp"
+        android:background="@drawable/edittextfile"/>
+    <EditText
+        android:id="@+id/editaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:padding="8sp"
+        android:background="@drawable/edittextfile"/>
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="30sp"
+        android:textSize="22sp"
+        android:inputType="textEmailAddress"
+        android:padding="8sp"
+        android:background="@drawable/edittextfile"/>
+
+    <EditText
+        android:id="@+id/editphoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textSize="22sp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:padding="8sp"
+        android:background="@drawable/edittextfile"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="30sp"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        android:padding="8sp"
+        android:background="@drawable/edittextfile"/>
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="180sp"
+        android:layout_height="45sp"
+        android:text="Sign up"
+        android:layout_marginLeft="95sp"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape"
+        />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="#1B1D25"
+        android:layout_marginTop="25dp" />
+
+</LinearLayout>
