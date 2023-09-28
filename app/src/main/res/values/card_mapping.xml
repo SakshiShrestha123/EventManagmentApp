@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources xmlns:android="http://schemas.android.com/apk/res/android">
+        <string name="hotel_id_card1">hotel1</string>
+        <string name="hotel_id_card2">hotel2</string>
+    <string name="hotel_id_card3">hotel3</string>
+    <string name="hotel_id_card4">hotel4</string>
+    <string name="hotel_id_card5">hotel5</string>
+    <string name="hotel_id_card6">hotel6</string>
+        <!-- Add more mappings as needed -->
+    </resources>
