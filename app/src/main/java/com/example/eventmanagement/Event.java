@@ -6,7 +6,7 @@ public class Event {
     private String selectedEvent;
     private String selectedServices;
     private String selectedHotel;
-    private String eventId;
+   // private String eventId;
     private String eventName;
     private String numberOfGuests;
     private String entryDate;
@@ -19,11 +19,11 @@ public class Event {
 
     }
 
-    public Event(String selectedEvent, String selectedServices, String selectedHotel,String eventId, String eventName, String numberOfGuests, String entryDate, String exitDate) {
+    public Event(String selectedEvent, String selectedServices, String selectedHotel, String eventName, String numberOfGuests, String entryDate, String exitDate) {
         this.selectedEvent = selectedEvent;
         this.selectedServices = selectedServices;
         this.selectedHotel = selectedHotel;
-        this.eventId = eventId;
+    //    this.eventId = eventId;
         this.eventName = eventName;
         this.numberOfGuests = numberOfGuests;
         this.entryDate = entryDate;
@@ -33,7 +33,7 @@ public class Event {
 
     }
 
-//    public Event(String eventId, String eventName, String numberOfGuests, String entryDate, String exitDate) {
+//   public Event(String eventId, String eventName, String numberOfGuests, String entryDate, String exitDate) {
 //        this.eventId = eventId;
 //        this.eventName = eventName;
 //        this.numberOfGuests = numberOfGuests;
@@ -66,9 +66,9 @@ public class Event {
         this.selectedHotel = selectedHotel;
     }
 
-    public String getEventId() {
-        return eventId;
-    }
+  //  public String getEventId() {
+     //   return eventId;
+//    }
 
     public String getEventName() {
         return eventName;

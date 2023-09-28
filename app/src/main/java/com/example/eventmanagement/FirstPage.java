@@ -109,6 +109,21 @@ public class FirstPage extends AppCompatActivity {
     }
 }
 
+/**TODO
+ * NEW frag or active => list hotel
+ * rating => mean [algo] = sum(*)/count(*)
+ * searching (optional)
+ * recommend => items or user
+ * add  => admin dynamic
+ *      => hotel should add form admin
+ *      => list of hotels (u & a)
+ *      => event request
+ *      => evt status pending, approved, cancelled, rejected, completed
+ *      => if completed = true then can rate
+ * -update flow of rating --> i.e. rate hotel
+ */
+
+
 
 
 

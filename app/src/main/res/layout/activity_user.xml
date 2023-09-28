@@ -229,12 +229,21 @@
                 </LinearLayout>
 
                 <!-- Add more LinearLayouts for additional rows of cards -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:scrollbars="vertical" />
 
             </LinearLayout>
 
         </FrameLayout>
 
     </LinearLayout>
+
+
+        <!-- Your RecyclerView for displaying a list of hotels -->
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation"

@@ -1,7 +1,6 @@
 package com.example.eventmanagement;
 
 
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,6 +46,13 @@ public class BookEventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_event);
+
+
+        String selectEvent = null;
+        if (getIntent().hasExtra("selected_event")) {
+            selectEvent = getIntent().getStringExtra("selected_event");
+        }
+
 
         firebaseAuth = FirebaseAuth.getInstance(); //later
 
@@ -168,22 +174,23 @@ public class BookEventActivity extends AppCompatActivity {
         if (currentUser != null) {
             String userId = currentUser.getUid();
 
-            String eventId = databaseReference.push().getKey();
+            // String eventId = databaseReference.push().getKey();
 
-            String selectedServices=getIntent().getStringExtra("selected_services");
             String selectedEvent= getIntent().getStringExtra("selected_event");
             String selectedHotel= getIntent().getStringExtra("selected_hotel");
+            String selectedServices=getIntent().getStringExtra("selected_services");
 
+            //TODO: actual data
+            Event event = new Event(selectedEvent, selectedServices, selectedHotel, eventName, numberOfGuests, entryDate, exitDate);    // before it was this
 
-            Event event = new Event(selectedEvent, selectedServices, selectedHotel,eventId, eventName, numberOfGuests, entryDate, exitDate);    // before it was this
-
+            databaseReference.child(userId).setValue(event);
             //  User user = new User(eventId, eventName, numberOfGuests, entryDate, exitDate); //later i write this
 
-            if (eventId != null) {
-                databaseReference.child(userId).child(eventId).setValue(event);
+            //  if (eventId != null) {
+            //  databaseReference.child(userId).child(eventId).setValue(event);
 
-                // Toast.makeText(BookEventActivity.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
-            }
+            // Toast.makeText(BookEventActivity.this, "Data inserted successfully", Toast.LENGTH_SHORT).show();
+            // }
         }
 
         eventNameEditText.setText("");
@@ -202,7 +209,6 @@ public class BookEventActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
 
 
 

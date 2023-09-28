@@ -19,6 +19,10 @@
 
         />
 
+    <item android:title="Change Password"
+        android:id="@+id/changepw"
+        android:icon="@drawable/baseline_logout_24"/>
+
     <item android:title="Give Review"
         android:id="@+id/review"
         android:icon="@drawable/baseline_logout_24"

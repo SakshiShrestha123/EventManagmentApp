@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -19,12 +20,14 @@ public class UserSecondActivity extends AppCompatActivity {
 
     CardView cardview,cardview1,cardview2,cardview3,cardview4,cardview5;
 
+
     private String selectHotel;
 
     // private DatabaseReference userRef;
     private DatabaseReference eventsRef;
     private FirebaseAuth firebaseAuth;
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,12 @@ public class UserSecondActivity extends AppCompatActivity {
         cardview3=findViewById(R.id.cardview3);
         cardview4=findViewById(R.id.cardview4);
         cardview5=findViewById(R.id.cardview5);
+        cardview.setId(1);
+        cardview1.setId(2);
+        cardview2.setId(3);
+        cardview3.setId(4);
+        cardview4.setId(5);
+        cardview5.setId(6);
 
         // userRef = FirebaseDatabase.getInstance().getReference().child("Users");
         eventsRef = FirebaseDatabase.getInstance().getReference().child("Events");
@@ -45,10 +54,15 @@ public class UserSecondActivity extends AppCompatActivity {
         cardview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String selectEvent = getIntent().getStringExtra("selected_event");
+                int id = view.getId();
                 selectHotel = "Hotel Pabera";
-                saveSelectedEventToDatabase();
+                saveSelectedEventAndHotelToDatabase();
+
+
                 Intent i = new Intent(UserSecondActivity.this, BookEventActivity.class);
                 i.putExtra("selected_hotel", selectHotel);
+                i.putExtra("selected_event", selectEvent);
                 startActivity(i);
             }
         });
@@ -56,9 +70,13 @@ public class UserSecondActivity extends AppCompatActivity {
         cardview1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String selectEvent = getIntent().getStringExtra("selected_event");
+                int id = view.getId();
                 selectHotel = "Hotel Park Village";
-                saveSelectedEventToDatabase();
+                saveSelectedEventAndHotelToDatabase();
                 Intent i = new Intent(UserSecondActivity.this, BookEventActivity.class);
+                i.putExtra("selected_hotel",selectHotel);
+                i.putExtra("selected_event", selectEvent);
                 startActivity(i);
 
             }
@@ -67,9 +85,13 @@ public class UserSecondActivity extends AppCompatActivity {
         cardview2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String selectEvent = getIntent().getStringExtra("selected_event");
+                int id = view.getId();
                 selectHotel = "Yak and Yeti Hotel";
-                saveSelectedEventToDatabase();
+                saveSelectedEventAndHotelToDatabase();
                 Intent i = new Intent(UserSecondActivity.this, BookEventActivity.class);
+                i.putExtra("selected_hotel",selectHotel);
+                i.putExtra("selected_event", selectEvent);
                 startActivity(i);
 
             }
@@ -78,9 +100,14 @@ public class UserSecondActivity extends AppCompatActivity {
         cardview3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String selectEvent = getIntent().getStringExtra("selected_event");
+                int id = view.getId();
                 selectHotel = "Hotel Timila";
-                saveSelectedEventToDatabase();
+                saveSelectedEventAndHotelToDatabase();
                 Intent i = new Intent(UserSecondActivity.this, BookEventActivity.class);
+                i.putExtra("selected_hotel",selectHotel);
+                i.putExtra("selected_event", selectEvent);
+
                 startActivity(i);
             }
         });
@@ -88,9 +115,13 @@ public class UserSecondActivity extends AppCompatActivity {
         cardview4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String selectEvent = getIntent().getStringExtra("selected_event");
+                int id = view.getId();
                 selectHotel = "Hotel Everest";
-                saveSelectedEventToDatabase();
+                saveSelectedEventAndHotelToDatabase();
                 Intent i = new Intent(UserSecondActivity.this, BookEventActivity.class);
+                i.putExtra("selected_hotel",selectHotel);
+                i.putExtra("selected_event", selectEvent);
                 startActivity(i);
             }
         });
@@ -98,9 +129,13 @@ public class UserSecondActivity extends AppCompatActivity {
         cardview5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String selectEvent = getIntent().getStringExtra("selected_event");
+                int id = view.getId();
                 selectHotel = "Hotel Marriot";
-                saveSelectedEventToDatabase();
+                saveSelectedEventAndHotelToDatabase();
                 Intent i = new Intent(UserSecondActivity.this, BookEventActivity.class);
+                i.putExtra("selected_hotel",selectHotel);
+                i.putExtra("selected_event", selectEvent);
                 startActivity(i);
             }
         });
@@ -123,7 +158,7 @@ public class UserSecondActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void saveSelectedEventToDatabase() {
+    private void saveSelectedEventAndHotelToDatabase() {
         FirebaseUser currentUser = firebaseAuth.getCurrentUser();
         if (currentUser != null) {
             String userId = currentUser.getUid();
@@ -134,13 +169,16 @@ public class UserSecondActivity extends AppCompatActivity {
             // User user = new User();
             Event event =new Event();
             //  user.setSelectedHotel(selectHotel);
+            String selectEvent = null;
+            event.setSelectedEvent(selectEvent);
             event.setSelectedHotel(selectHotel);
             // Set other user properties...
 
-            //userRef.child(userId).setValue(user);
+
 
             // Save the user data to the database under the user's ID
-            eventsRef.child(userId).child("selectedHotel").setValue(selectHotel); //now
+            // eventsRef.child(userId).child("selectedHotel").setValue(selectHotel); //now
+            eventsRef.child(userId).setValue(event);
 
         }
     }

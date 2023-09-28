@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class UserThirdActivity extends AppCompatActivity {
+    //todo: user proper name
     private LinearLayout servicesLayout;
     private Button saveButton;
     private String selectedServices = "";

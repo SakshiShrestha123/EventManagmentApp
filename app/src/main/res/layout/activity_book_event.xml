@@ -111,8 +111,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Entry Date"
-
-            android:textSize="23sp"/>
+            android:textSize="23sp"
+            android:focusable="false"
+            android:clickable="true"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -129,7 +130,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Exit Date"
-            android:textSize="23sp"/>
+            android:textSize="23sp"
+            android:focusable="false"
+            android:clickable="true"/>
 
 
 
