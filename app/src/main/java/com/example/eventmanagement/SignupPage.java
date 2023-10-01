@@ -84,8 +84,7 @@ public class SignupPage extends AppCompatActivity {
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(SignupPage.this,"User Registration Unsuccessful",Toast.LENGTH_SHORT).show();
-
+                            Toast.makeText(SignupPage.this,"User Registration Unsuccessful \n"+e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
@@ -93,26 +92,36 @@ public class SignupPage extends AppCompatActivity {
 
             private boolean valid() {
                 boolean validation=true;
+                String error = "";
                 if(TextUtils.isEmpty(name.getText().toString())){
                     name.setError("Name cannot be empty");
+                    error +="name";
                     validation=false;
                 }
                 if(TextUtils.isEmpty(address.getText().toString())){
                     address.setError("Address cannot be empty");
+                    error +="Address";
                     validation=false;
                 }
                 if(TextUtils.isEmpty(email.getText().toString())){
                     email.setError("Email cannot be empty");
+                    error +="Email";
                     validation=false;
                 }
                 if(TextUtils.isEmpty(phone.getText().toString())){
                     phone.setError("Phone number cannot be empty");
+                    error +="Phone";
                     validation=false;
                 }
                 if(TextUtils.isEmpty(pw.getText().toString())){
                     pw.setError("Password cannot be empty");
+                    error +="Password";
                     validation=false;
                 }
+
+                if(!validation)
+                    Toast.makeText(SignupPage.this, error,Toast.LENGTH_SHORT).show();
+
                 return validation;
             }
         });

@@ -11,6 +11,8 @@ public class Event {
     private String numberOfGuests;
     private String entryDate;
     private String exitDate;
+    private User user;
+
 
 
 
@@ -28,6 +30,7 @@ public class Event {
         this.numberOfGuests = numberOfGuests;
         this.entryDate = entryDate;
         this.exitDate = exitDate;
+        this.user=user;
 
 
 
@@ -41,7 +44,9 @@ public class Event {
 //        this.exitDate = exitDate;
 //
 //    }
-
+public User getUser() {
+    return user;
+}
     public String getSelectedEvent() {
         return selectedEvent;
     }
@@ -85,6 +90,18 @@ public class Event {
     public String getExitDate() {
         return exitDate;
     }
+    public class User {
+        public String email;
 
+        // Constructor
+        public User(String email) {
+            this.email = email;
+        }
+
+        // Getter for email
+        public String getEmail() {
+            return email;
+        }
+    }
 
 }

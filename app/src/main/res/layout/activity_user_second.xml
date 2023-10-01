@@ -1,315 +1,362 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 
-<ScrollView android:layout_height="match_parent"
+<!--<ScrollView android:layout_height="match_parent"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="wrap_content">-->
+
+<!--    <FrameLayout android:layout_height="match_parent"-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/framelayout1">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#9AC2E3"-->
+<!--                app:title="Choose The Hotel"-->
+
+<!--                app:titleMarginEnd="72dp"-->
+<!--                app:titleMarginStart="80dp"-->
+<!--                app:titleTextColor="@color/black" />-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cardview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120sp"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="20dp"-->
+<!--                android:layout_margin="10sp"-->
+<!--                app:cardBackgroundColor="#BFBDBD"-->
+<!--                android:clickable="true"-->
+<!--                android:foreground="?attr/selectableItemBackground">-->
+
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/hotel1"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/hoteltext"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hotel Pabera-->
+<!--                Budhanilkantha"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_toEndOf="@+id/imageView"-->
+<!--                        android:layout_marginStart="40sp"-->
+<!--                        android:layout_marginTop="20sp"-->
+<!--                        />-->
+
+<!--                </RelativeLayout>-->
+
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cardview1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120sp"-->
+<!--                app:cardCornerRadius="30dp"-->
+<!--                app:cardElevation="20dp"-->
+<!--                android:layout_margin="10sp"-->
+<!--                app:cardBackgroundColor="#BFBDBD"-->
+<!--                android:clickable="true"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                >-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView1"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/hotel2"-->
+
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/text2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hotel Park Village-->
+<!--Budhanilkantha"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:layout_toEndOf="@+id/imageView1"-->
+<!--                        android:layout_marginStart="40sp"-->
+<!--                        android:layout_marginTop="20sp"-->
+
+<!--                        />-->
+
+
+<!--                </RelativeLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cardview2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120sp"-->
+<!--                app:cardCornerRadius="30dp"-->
+<!--                app:cardElevation="20dp"-->
+<!--                android:layout_margin="10sp"-->
+<!--                app:cardBackgroundColor="#BFBDBD"-->
+<!--                android:clickable="true"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                >-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView2"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/hotel3"-->
+
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/text3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Yak and Yeti Hotel-->
+<!--Durbar Marg"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_toEndOf="@+id/imageView2"-->
+<!--                        android:layout_marginStart="40sp"-->
+<!--                        android:layout_marginTop="20sp"-->
+
+<!--                        />-->
+
+
+<!--                </RelativeLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cardview3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120sp"-->
+<!--                app:cardCornerRadius="30dp"-->
+<!--                app:cardElevation="20dp"-->
+<!--                android:layout_margin="10sp"-->
+<!--                app:cardBackgroundColor="#BFBDBD"-->
+<!--                android:clickable="true"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                >-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView3"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/hotel4"-->
+
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/text4"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hotel Timila-->
+<!--                        Patan,Lalitpur"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_toEndOf="@+id/imageView3"-->
+<!--                        android:layout_marginStart="40sp"-->
+<!--                        android:layout_marginTop="20sp"-->
+
+<!--                        />-->
+
+
+<!--                </RelativeLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cardview4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120sp"-->
+<!--                app:cardCornerRadius="30dp"-->
+<!--                app:cardElevation="20dp"-->
+<!--                android:layout_margin="10sp"-->
+<!--                app:cardBackgroundColor="#BFBDBD"-->
+<!--                android:clickable="true"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                >-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView5"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/hotel5"-->
+
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/text5"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hotel Everest-->
+<!--Kathmandu"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_toEndOf="@+id/imageView5"-->
+<!--                        android:layout_marginStart="40sp"-->
+<!--                        android:layout_marginTop="20sp"-->
+
+<!--                        />-->
+
+
+<!--                </RelativeLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cardview5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120sp"-->
+<!--                app:cardCornerRadius="30dp"-->
+<!--                app:cardElevation="20dp"-->
+<!--                android:layout_margin="10sp"-->
+<!--                app:cardBackgroundColor="#BFBDBD"-->
+<!--                android:clickable="true"-->
+<!--                android:foreground="?attr/selectableItemBackground"-->
+<!--                >-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="16dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView6"-->
+<!--                        android:layout_width="120dp"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/hotel6"-->
+
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/text6"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hotel Marriot-->
+<!--Kathmandu"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_toEndOf="@+id/imageView6"-->
+<!--                        android:layout_marginStart="40sp"-->
+<!--                        android:layout_marginTop="20sp"-->
+
+<!--                        />-->
+
+
+<!--                </RelativeLayout>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+<!--        </LinearLayout>-->
+
+
+<!--    </FrameLayout>-->
+
+
+<!--</ScrollView>-->
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content">
-
-    <FrameLayout android:layout_height="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/framelayout1">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#9AC2E3"
-                app:title="Choose The Hotel"
-
-                app:titleMarginEnd="72dp"
-                app:titleMarginStart="80dp"
-                app:titleTextColor="@color/black" />
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview"
-                android:layout_width="match_parent"
-                android:layout_height="120sp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="20dp"
-                android:layout_margin="10sp"
-                app:cardBackgroundColor="#BFBDBD"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground">
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="120dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/hotel1"
-                        />
-
-                    <TextView
-                        android:id="@+id/hoteltext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Hotel Pabera
-                Budhanilkantha"
-                        android:textSize="20sp"
-                        android:textColor="@color/black"
-                        android:layout_toEndOf="@+id/imageView"
-                        android:layout_marginStart="40sp"
-                        android:layout_marginTop="20sp"
-                        />
-
-                </RelativeLayout>
-
-
-
-            </androidx.cardview.widget.CardView>
-
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview1"
-                android:layout_width="match_parent"
-                android:layout_height="120sp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="20dp"
-                android:layout_margin="10sp"
-                app:cardBackgroundColor="#BFBDBD"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:id="@+id/imageView1"
-                        android:layout_width="120dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/hotel2"
-
-                        />
-
-                    <TextView
-                        android:id="@+id/text2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Hotel Park Village
-Budhanilkantha"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:layout_toEndOf="@+id/imageView1"
-                        android:layout_marginStart="40sp"
-                        android:layout_marginTop="20sp"
-
-                        />
-
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview2"
-                android:layout_width="match_parent"
-                android:layout_height="120sp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="20dp"
-                android:layout_margin="10sp"
-                app:cardBackgroundColor="#BFBDBD"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="120dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/hotel3"
-
-                        />
-
-                    <TextView
-                        android:id="@+id/text3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Yak and Yeti Hotel
-Durbar Marg"
-                        android:textSize="20sp"
-                        android:textColor="@color/black"
-                        android:layout_toEndOf="@+id/imageView2"
-                        android:layout_marginStart="40sp"
-                        android:layout_marginTop="20sp"
-
-                        />
-
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview3"
-                android:layout_width="match_parent"
-                android:layout_height="120sp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="20dp"
-                android:layout_margin="10sp"
-                app:cardBackgroundColor="#BFBDBD"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="120dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/hotel4"
-
-                        />
-
-                    <TextView
-                        android:id="@+id/text4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Hotel Timila
-                        Patan,Lalitpur"
-                        android:textSize="20sp"
-                        android:textColor="@color/black"
-                        android:layout_toEndOf="@+id/imageView3"
-                        android:layout_marginStart="40sp"
-                        android:layout_marginTop="20sp"
-
-                        />
-
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview4"
-                android:layout_width="match_parent"
-                android:layout_height="120sp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="20dp"
-                android:layout_margin="10sp"
-                app:cardBackgroundColor="#BFBDBD"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                >
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/hotel5"
-
-                    />
-
-                <TextView
-                    android:id="@+id/text5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Hotel Everest
-Kathmandu"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:layout_toEndOf="@+id/imageView5"
-                    android:layout_marginStart="40sp"
-                    android:layout_marginTop="20sp"
-
-                    />
-
-
-            </RelativeLayout>
-
-
-</androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview5"
-                android:layout_width="match_parent"
-                android:layout_height="120sp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="20dp"
-                android:layout_margin="10sp"
-                app:cardBackgroundColor="#BFBDBD"
-                android:clickable="true"
-                android:foreground="?attr/selectableItemBackground"
-                >
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="120dp"
-                        android:layout_height="150dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/hotel6"
-
-                        />
-
-                    <TextView
-                        android:id="@+id/text6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Hotel Marriot
-Kathmandu"
-                        android:textSize="20sp"
-                        android:textColor="@color/black"
-                        android:layout_toEndOf="@+id/imageView6"
-                        android:layout_marginStart="40sp"
-                        android:layout_marginTop="20sp"
-
-                        />
-
-
-                </RelativeLayout>
-
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-
-
-    </FrameLayout>
-
-</ScrollView>
+        android:layout_height="wrap_content"
+        android:background="#9AC2E3"
+        android:title="Choose The Hotel" />
+
+    <TextView
+        android:id="@+id/view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/view_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/view_occupancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/view_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/view_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+</LinearLayout>
 
 
 

@@ -35,7 +35,11 @@ public class UserProfileFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_profile, null);
+        View view = inflater.inflate(R.layout.fragment_profile,null);
+
+
+
+
 
         // Initialize the TextView fields
         textViewName = view.findViewById(R.id.editTextName);
@@ -52,16 +56,15 @@ public class UserProfileFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
 
+
                     // Log retrieved data  //later
                     Log.d("FirebaseData", "Snapshot: " + snapshot.toString());
 
-                    String address = snapshot.child("address").getValue(String.class);
-                    String password = snapshot.child("password").getValue(String.class);
-                    String phoneNo = snapshot.child("phoneNo").getValue(String.class);
-                    String email = snapshot.child("email").getValue(String.class);
-
-
-                    String username = snapshot.child("username").getValue(String.class);
+                    String address = snapshot.child("Address").getValue(String.class);
+                    String password = snapshot.child("Password").getValue(String.class);
+                    String phoneNo = snapshot.child("PhoneNumber").getValue(String.class);
+                    String email = snapshot.child("UserEmail").getValue(String.class);
+                    String username = snapshot.child("Username").getValue(String.class);
 
                     Log.d("FirebaseData", "Username: " + username);
                     Log.d("FirebaseData", "Address: " + address);
